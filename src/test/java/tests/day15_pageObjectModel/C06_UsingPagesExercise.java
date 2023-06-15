@@ -25,7 +25,7 @@ public class C06_UsingPagesExercise {
         softAssert.assertEquals(actualUrl,expectedUrl,"you are not on homepage");
 
         //4. Click on 'Signup / Login' button
-        AutomationExercisePage automationExercisePage = new AutomationExercisePage();
+        AutomationExercisePage automationExercisePage = new AutomationExercisePage(); //create object from page class
         automationExercisePage.signUpLoginElement.click();
 
         //5. Verify 'Login to your account' is visible
