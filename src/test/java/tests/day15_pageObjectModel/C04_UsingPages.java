@@ -35,7 +35,7 @@ public class C04_UsingPages {
         ReusableMethods.wait(2);
     }
 
-    @Test
+    @Test(groups = "regression")
     public void bicycleTest() {
         Driver.getDriver().get("https://www.amazon.com");
         amazonHomePage.searchBoxElement.sendKeys("bicycle" + Keys.ENTER);

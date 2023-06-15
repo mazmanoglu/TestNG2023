@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="group running">
+    <test name="group test01">
+        <!--If we want to run the test methods via specific groups we have determined,
+         we must assign 'group information' to all the test methods we want to run before, using annotations.
+
+         If we run via groups, we need 2 information
+         - test methods from which classes or packages?
+         - tests from which groups?
+         -->
+        <groups>
+            <run>
+                <include name="regression">
+                </include>
+                <exclude name="smoke">
+                </exclude>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day16_pageObjectModel">
+            </package>
+            <package name="tests.day15_pageObjectModel">
+            </package>
+        </packages>
+    </test>
+</suite>

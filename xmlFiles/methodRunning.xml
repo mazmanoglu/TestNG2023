@@ -2,6 +2,22 @@
 <suite name="method running">
     <test name="method test01">
         <classes>
+            <class name="tests.day16_pageObjectModel.C02_XmlFiles">
+                <methods>
+                    <include name="test01">
+                    </include>
+                    <include name="test02">
+                    </include>
+                    <include name="test04">
+                    </include>
+                </methods>
+            </class>
+            <class name="tests.day16_pageObjectModel.C03_XmlFiles">
+                <methods>
+                    <exclude name="test05">
+                    </exclude>
+                </methods>
+            </class>
             <class name="tests.day14_dependsOnMethods_softAssert.C03_SoftAssert">
                 <methods>
                     <exclude name="softAssertionTest">
