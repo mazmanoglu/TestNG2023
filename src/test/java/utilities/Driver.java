@@ -13,6 +13,9 @@ import java.time.Duration;
 
 public class Driver {
 
+    private Driver(){
+        // With Singleton Pattern concept, we created this constructor to prevent creating objects from Driver class.eger
+    }
     static WebDriver driver;
 
     public static WebDriver getDriver(){
